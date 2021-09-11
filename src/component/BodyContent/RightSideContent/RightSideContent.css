@@ -1,0 +1,21 @@
+
+.rightSideContent{
+    height: 108px;
+    border-bottom: 1px solid #ddd;
+    margin-top: 10px;
+}
+.imageSection{}
+.imageSection img{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+.TitleSection h5{
+    font-size: 16px;
+    color: #000;
+    line-height: 22px;
+    font-weight: 600;
+    margin-top: 4px;
+    margin-left: 11px;
+}
