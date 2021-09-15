@@ -6,7 +6,7 @@ import RightSideContent from '../RightSideContent/RightSideContent';
 const RightSide = () => {
     const [news, setLatestNews] = useState([])
     useEffect( () => {
-        fetch(`http://localhost:5000/latestNews`)
+        fetch(`https://secure-retreat-19674.herokuapp.com/latestNews`)
         .then(res => res.json())
         .then(data => setLatestNews(data))
 

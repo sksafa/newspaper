@@ -11,7 +11,7 @@ const NewsDetails = () => {
     const [ detailsNews, setDetailsNews  ] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/newsId/`+_id)
+        fetch(`https://secure-retreat-19674.herokuapp.com/newsId/`+_id)
             .then(res => res.json())
             .then(data =>{
                 setDetailsNews(data);
@@ -28,7 +28,7 @@ const NewsDetails = () => {
                 <div className="detailsNews">
                     <h2 className="mt-4" >{title}</h2>
                     <h6>Author - {author}</h6>
-                    {/* <img src={`data:image/png;base64,${image.img}`} alt="" /> */}
+                    <img src={`data:image/png;base64,${image?.img}`} alt="" />
                     {/* <img src="data:image/png/<%=image.img.contentType%>;base64,
                      <%=image.img%>"/> */}
                     <p>{description}</p>

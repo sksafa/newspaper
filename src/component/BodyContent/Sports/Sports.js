@@ -8,7 +8,7 @@ import PoliticsCategory from '../PoliticsCategory/PoliticsCategory';
 const Sports = () => {
     const [newsList, setNewsList] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/sports`)
+        fetch(`https://secure-retreat-19674.herokuapp.com/sports`)
             .then(res => res.json())
             .then(data => setNewsList(data))
     }, [])

@@ -28,7 +28,7 @@ const Admin = () => {
         formData.append('category', info.category);
         formData.append('author', info.author);
 
-        fetch(`http://localhost:5000/admin`, {
+        fetch(`https://secure-retreat-19674.herokuapp.com/admin`, {
             method: 'POST',
             body: formData
         })

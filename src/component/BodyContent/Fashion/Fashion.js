@@ -8,10 +8,10 @@ import PoliticsCategory from '../PoliticsCategory/PoliticsCategory';
 const Fashion = () => {
     const [newsList, setNewsList] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/fashion`)
+        fetch(`https://secure-retreat-19674.herokuapp.com/fashion`)
             .then(res => res.json())
             .then(data => setNewsList(data))
-    }, [])
+    }, []);
     return (
         <div>
             <Header />

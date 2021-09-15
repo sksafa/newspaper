@@ -11,7 +11,7 @@ const RightSideContent = (props) => {
            </div>
            <div className="TitleSection">
                <h5>{title}</h5>
-               <Link to={`/NewsDetails/${_id}`}> <p>Details</p> </Link>
+               <Link  to={`/NewsDetails/${_id}`}> <p className="details">Details</p> </Link>
            </div>
         </div>
     );

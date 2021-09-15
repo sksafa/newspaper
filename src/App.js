@@ -36,16 +36,16 @@ function App() {
             <NewsDetails></NewsDetails>
           </Route>
 
-          <PrivateRoute path="/politics">
+          <Route path="/politics">
             <Politics></Politics>
-          </PrivateRoute>
+          </Route>
           <Route path="/culture">
             <Culture></Culture>
           </Route>
 
-          <PrivateRoute path="/sports">
+          <Route path="/sports">
             <Sports></Sports>
-          </PrivateRoute>
+          </Route>
 
           <Route path="/fashion">
             <Fashion></Fashion>

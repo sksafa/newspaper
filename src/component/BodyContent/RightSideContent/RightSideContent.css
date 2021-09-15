@@ -19,3 +19,9 @@
     margin-top: 4px;
     margin-left: 11px;
 }
+
+.TitleSection a{
+    text-decoration: none;
+    color: brown;
+}
+
