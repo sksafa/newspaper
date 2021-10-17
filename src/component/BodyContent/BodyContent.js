@@ -37,7 +37,7 @@ const BodyContent = () => {
                 </div>
 
                 <div className="row ">
-                    <h3 categoryText className=" mt-3 mb-4">Sport News -------</h3>
+                    <h3 categoryText className=" mt-3 mb-4">SPORT NEWS ---</h3>
                     <div className="row d-flex detailsPolitics">
                         {
                             newsList.length === 0 && <div class="spinner-grow text-primary" role="status">
@@ -51,7 +51,7 @@ const BodyContent = () => {
                 </div>
 
                 <div className="row ">
-                    <h3 categoryText className="mt-4 mb-4">Fashion News -------</h3>
+                    <h3 categoryText className="mt-4 mb-4">FASHION NEWS ---</h3>
                     <div className="row d-flex detailsPolitics">
                     {
                             faList.length === 0 && <div class="spinner-grow text-primary" role="status">
