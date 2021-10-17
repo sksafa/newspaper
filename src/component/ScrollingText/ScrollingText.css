@@ -1,4 +1,15 @@
 .scrollText{
-    background-color: black;
-    color: yellow;
+    background-color: #215168;
+    color: #ffffff;
+    padding: 4px 0px;
+    width: 95%;
+    margin-top: 26px;
+    /* margin: 0 auto; */
+    margin-left: 44px;
 }
+
+@media screen and (max-width: 600px) {
+    .scrollText{
+       display: none;
+    }
+  }

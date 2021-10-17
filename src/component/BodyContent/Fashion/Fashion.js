@@ -16,13 +16,18 @@ const Fashion = () => {
         <div>
             <Header />
             <Navbar />
-            <div className="container">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-md-3">
                         <LeftSide></LeftSide>
                     </div>
                     <div className="col-md-9">
                         <div className="row">
+                        {
+                                newsList.length === 0 && <div class="spinner-grow text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
+                            }
                             {
                                 newsList.map(politicsNews => <PoliticsCategory politicsNews={politicsNews} ></PoliticsCategory>)
                             }

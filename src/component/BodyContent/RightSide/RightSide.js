@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import RightSideContent from '../RightSideContent/RightSideContent';
+import './RightSide.css'
 
 
 const RightSide = () => {
@@ -13,8 +14,13 @@ const RightSide = () => {
     }, [])
          console.log(news)
     return (
-        <div>
+        <div className="rightBody"> 
             <h4>LATEST POSTS</h4>
+            {
+                            news.length === 0 && <div class="spinner-grow text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        }
              {
               news.map(newsInfo => <RightSideContent newsInfo={newsInfo} key={newsInfo._id} ></RightSideContent> )
              }

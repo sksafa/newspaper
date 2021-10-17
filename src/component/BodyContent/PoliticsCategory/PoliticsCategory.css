@@ -1,4 +1,15 @@
 .detailsPolitics a{
     text-decoration: none;
-    color: brown;
+    color: #fff;
+    margin-left: 14px;
+    display: inline-block;
+    background: #000;
+    height: 31px;
+    padding: 1px 10px;
+    margin-bottom: 17px;
+    border-radius: 3px;
+}
+.card img{
+    height: 400px;
+    width: 100%;
 }

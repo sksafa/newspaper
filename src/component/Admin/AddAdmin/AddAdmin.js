@@ -1,7 +1,7 @@
 
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../../Header/Header';
+import Navbar from '../../Navbar/Navbar';
 
 const AddAdmin = () => {
     const [info, setInfo] = useState({});
@@ -32,6 +32,7 @@ const AddAdmin = () => {
             .then(response => response.json())
             .then(data => {
                 console.log(data)
+               
             })
             .catch(error => {
                 console.error(error)
@@ -41,8 +42,8 @@ const AddAdmin = () => {
 
     return (
         <div>
-            <Header />
-            <div className="container">
+                 <Navbar/>
+            <div className="container-fluid">
                 <h5 className="text-center">Admin Dashboard </h5>
                 <div className="row">
                     <div className="col-md-3 col-sm-12">

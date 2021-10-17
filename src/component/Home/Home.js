@@ -3,13 +3,12 @@ import BodyContent from '../BodyContent/BodyContent';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Navbar from '../Navbar/Navbar';
-import ScrollingText from '../ScrollingText/ScrollingText';
+import './home.css'
 
 const Home = () => {
     return (
-        <div>
+        <div className="color">
             <Header></Header>
-            <ScrollingText/>
             <Navbar></Navbar>
             <BodyContent></BodyContent>
             <Footer></Footer>

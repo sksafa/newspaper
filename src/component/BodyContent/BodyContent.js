@@ -3,6 +3,7 @@ import HomeSport from '../HomeSport/HomeSport';
 import LeftSide from './LeftSide/LeftSide';
 import MiddleBannar from './MiddleBannar/MiddleBannar';
 import RightSide from './RightSide/RightSide';
+import './Body.css'
 
 const BodyContent = () => {
     const [newsList, setNewsList] = useState([]);
@@ -22,7 +23,7 @@ const BodyContent = () => {
 
     return (
         <div className="">
-            <div className="container">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-md-3">
                         <LeftSide></LeftSide>
@@ -35,26 +36,32 @@ const BodyContent = () => {
                     </div>
                 </div>
 
-                <div className="row">
-                <h3 className="text-danger mt-3 mb-4">Sport News -------</h3>
-                   <div className="row d-flex detailsPolitics">
-                      
-                       {
-                                newsList.map(politicsNews => <HomeSport politicsNews={politicsNews} ></HomeSport>)
-                            }
-                       
-                   </div>
+                <div className="row ">
+                    <h3 categoryText className=" mt-3 mb-4">Sport News -------</h3>
+                    <div className="row d-flex detailsPolitics">
+                        {
+                            newsList.length === 0 && <div class="spinner-grow text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        }
+                        {
+                            newsList.map(politicsNews => <HomeSport politicsNews={politicsNews} ></HomeSport>)
+                        }
+                    </div>
                 </div>
 
-                <div className="row">
-                <h3 className="text-danger mt-4 mb-4">Fashion News -------</h3>
-                   <div className="row d-flex detailsPolitics">
-                      
-                       {
-                                faList.map(politicsNews => <HomeSport politicsNews={politicsNews} ></HomeSport>)
-                            }
-                       
-                   </div>
+                <div className="row ">
+                    <h3 categoryText className="mt-4 mb-4">Fashion News -------</h3>
+                    <div className="row d-flex detailsPolitics">
+                    {
+                            faList.length === 0 && <div class="spinner-grow text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        }
+                        {
+                            faList.map(politicsNews => <HomeSport politicsNews={politicsNews} ></HomeSport>)
+                        }
+                    </div>
                 </div>
 
             </div>

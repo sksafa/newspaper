@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../../Header/Header';
+import Navbar from '../../Navbar/Navbar';
+import './admin.css'
 
 
 
@@ -44,9 +45,9 @@ const Admin = () => {
 
     return (
         <div>
-            <Header />
-            <div className="container">
-                <h5 className="text-center">Admin Dashboard </h5>
+            <Navbar/>
+            <div className="container-fluid ">
+                <h5 className="text-center mt-4">Admin Dashboard </h5>
                 <div className="row">
                     <div className="col-md-3 col-sm-12">
                         <div className="CategoryList">

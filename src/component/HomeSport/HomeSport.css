@@ -1,0 +1,16 @@
+.cardSewction{
+    height: 332px;
+}
+.cardSewction a{
+    text-decoration: none;
+    color: #fff !important;
+    /* margin-left: 98px; */
+    display: inline-block;
+    background: #000;
+    height: 28px;
+    padding: 1px 9px;
+    margin-bottom: 17px;
+    border-radius: 3px;
+    float: left;
+    margin-top: 6px;
+}

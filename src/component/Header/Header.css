@@ -1,0 +1,32 @@
+.headerSection{
+    background-color: #fff;
+}
+.headerSection img{
+    height: 51px;
+    width: 264px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.headerSection p{
+    margin-top: 26px;
+    color: #fff;
+    width: 188px;
+    background: #212529;
+    padding: 7px 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .headerSection img{
+        height: 40px;
+        width: 164px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .headerSection h4{
+        margin-top: 19px;
+        color: #423f3f;
+        font-size: 16px;
+        margin-left: 10px;
+        padding-right: 10px;
+    }
+  }

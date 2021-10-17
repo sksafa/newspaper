@@ -1,0 +1,53 @@
+.middleBanner{
+    background-color: #ffff;
+    margin-top: 25px;
+}
+.middleBanner h4{
+    margin-top: 12px;
+    margin-left: 12px;
+    font-weight: 600;
+}
+.middleBanner h6{
+    margin-top: 12px;
+    margin-left: 12px;
+}
+.middleBanner p{
+    margin-top: 12px;
+    margin-left: 12px;
+    text-align: justify;
+    padding-right: 29px;
+    padding-bottom: 16px;
+}
+.middleCulture h4{
+    background: #212529;
+    color: #ffffffe0;
+    padding: 4px 10px;
+    font-size: 18px;
+    /* display: block; */
+    /* display: inline-block; */
+    margin-left: 0px;
+}
+.MiddleSideContent{
+    height: 128px;
+    margin-top: 36px;
+}
+.middleTitleSection h5{
+    font-size: 16px;
+    color: #000;
+    line-height: 22px;
+    font-weight: 600;
+    margin-top: 4px;
+    margin-left: 11px;
+}
+.middleTitleSection a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 13px;
+    display: inline-block;
+    background: #000;
+    height: 29px;
+    padding: 2px 8px;
+    margin-bottom: 0px;
+    border-radius: 3px;
+}
+    

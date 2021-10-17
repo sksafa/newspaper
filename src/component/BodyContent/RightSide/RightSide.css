@@ -1,0 +1,12 @@
+.rightBody{
+    background-color: #fff;
+    margin-top: 25px;
+}
+
+
+.rightBody h4{
+    background-color: #212529;
+    color: #ffffffde;
+    font-size: 16px;
+    padding: 9px 15px;
+}
